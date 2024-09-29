@@ -142,3 +142,7 @@ export GIT_PS1_SHOWUNTRACKEDFILES=1
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# bun
+export BUN_INSTALL="$HOME/.local/share/reflex/bun"
+export PATH=$BUN_INSTALL/bin:$PATH
