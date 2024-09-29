@@ -8,6 +8,8 @@ set list
 set listchars=tab:\>-\,space:･
 set ignorecase
 
+" visual block mode command
+command! Vb normal! <C-v>
 
 " vim-plug Install
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
@@ -21,3 +23,4 @@ endif
 call plug#begin('~/.vim/plugged')
 Plug 'cohama/lexima.vim'
 call plug#end()
+
