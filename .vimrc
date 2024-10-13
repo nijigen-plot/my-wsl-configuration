@@ -22,5 +22,16 @@ endif
 " lexima.vim install
 call plug#begin('~/.vim/plugged')
 Plug 'cohama/lexima.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/vim-easy-align'
+Plug 'aduros/ai.vim'
+Plug 'jpalardy/vim-slime'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
+# coc.nvim setting(バージョンが足りない場合以下)
+# sudo add-apt-repository ppa:jonathonf/vim
+# sudo apt update
+# sudo apt install vim
+# :CoCInstall coc-pyright
