@@ -124,6 +124,7 @@ fi
 PATH=$(echo "$PATH" | sed -e 's/:\/mnt.*//g')
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
+export TERM=screen-256color
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 export WIN_USERNAME=$(/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe '$env:USERNAME' | sed -e 's/^M//g')
