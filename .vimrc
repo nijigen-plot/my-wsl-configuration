@@ -30,8 +30,8 @@ Plug 'jpalardy/vim-slime'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
-# coc.nvim setting(バージョンが足りない場合以下)
-# sudo add-apt-repository ppa:jonathonf/vim
-# sudo apt update
-# sudo apt install vim
-# :CoCInstall coc-pyright
+" coc.nvim setting(バージョンが足りない場合以下)
+" sudo add-apt-repository ppa:jonathonf/vim
+" sudo apt update
+" sudo apt install vim
+" :CoCInstall coc-pyright
