@@ -34,3 +34,6 @@ call plug#end()
 " sudo apt update
 " sudo apt install vim
 " :CoCInstall coc-pyright
+
+" vim-slime setting
+let g:slime_target = "tmux"
