@@ -7,6 +7,7 @@ syntax on
 set list
 set listchars=tab:\>-\,space:･
 set ignorecase
+set laststatus=2
 
 " visual block mode command
 command! Vb normal! <C-v>
