@@ -34,6 +34,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'jpalardy/vim-slime'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'CoderCookE/vim-chatgpt'
 call plug#end()
 
 " coc.nvim setting(バージョンが足りない場合以下)
@@ -63,3 +64,17 @@ inoremap <expr> <CR> pumvisible() ? coc#_select_confirm() : "\<CR>"
 
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
+
+" vim-chatgpt setting
+let g:chat_gpt_max_tokens=4097
+let g:chat_gpt_model='gpt-4o'
+let g:chat_gpt_session_mode=1
+let g:chat_gpt_temperature = 0.7
+let g:chat_gpt_lang = 'Japanese'
+let g:chat_gpt_split_direction = 'horizontal'
+let g:split_ratio=4
+" OPENAI_API_KEY
+if filereadable(expand("~/.openai_key"))
+    execute 'source ~/.openai_key'
+endif
+
