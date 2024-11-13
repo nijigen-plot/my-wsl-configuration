@@ -147,3 +147,9 @@ export SDKMAN_DIR="$HOME/.sdkman"
 # bun
 export BUN_INSTALL="$HOME/.local/share/reflex/bun"
 export PATH=$BUN_INSTALL/bin:$PATH
+
+# read a secret settings
+if [ -f ~/.bash_secrets ]; then
+	. ~/.bash_secrets
+fi
+
