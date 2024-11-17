@@ -153,3 +153,6 @@ if [ -f ~/.bash_secrets ]; then
 	. ~/.bash_secrets
 fi
 
+# direnv setting
+eval "$(direnv hook bash)"
+
