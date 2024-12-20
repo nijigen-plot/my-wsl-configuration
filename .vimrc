@@ -6,7 +6,7 @@ set number
 set hlsearch
 syntax on
 set list
-set listchars=tab:\>-\,space:･
+set listchars=tab:\>-\
 set ignorecase
 set laststatus=2
 set ts=4
