@@ -13,6 +13,20 @@ if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
   exec tmux
 fi
 
+# Tmux color change function
+function website-server() {
+    tmux select-pane -P 'bg=colour58,fg=black'
+    ssh mywebsite-server
+    tmux select-pane -P 'bg=default,fg=default'
+}
+
+function rasp-server() {
+    tmux select-pane -P 'bg=colour64,fg=black'
+    ssh raspberrypi
+    tmux select-pane -P 'bg=default,fg=default'
+}
+
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
