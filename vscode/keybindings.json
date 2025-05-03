@@ -1,28 +1,28 @@
 [
-    {
-        "key": "ctrl+alt+n",
-        "command": "explorer.newFile"
-    },
-    {
-        "key": "ctrl+shift+n",
-        "command": "explorer.newFolder"
-    },
-    {
-        "key": "ctrl+shift+r",
-        "command": "revealFileInOS"
-    },
-    {
-        "key": "ctrl+shift+a",
-        "command": "workbench.view.extension.project-manager",
-        "when": "viewContainer.workbench.view.extension.project-manager.enabled"
-    },
-    {
-        "key": "ctrl+shift+q",
-        "command": "-workbench.action.quickOpenNavigatePreviousInViewPicker",
-        "when": "inQuickOpen && inViewsPicker"
-    },
-    {
-        "key": "ctrl+shift+q",
-        "command": "workbench.view.extension.claude-dev-ActivityBar"
-    }
+  {
+    "command": "explorer.newFile",
+    "key": "ctrl+alt+n"
+  },
+  {
+    "command": "explorer.newFolder",
+    "key": "ctrl+shift+n"
+  },
+  {
+    "command": "revealFileInOS",
+    "key": "ctrl+shift+r"
+  },
+  {
+    "command": "workbench.view.extension.project-manager",
+    "key": "ctrl+shift+a",
+    "when": "viewContainer.workbench.view.extension.project-manager.enabled"
+  },
+  {
+    "command": "-workbench.action.quickOpenNavigatePreviousInViewPicker",
+    "key": "ctrl+shift+q",
+    "when": "inQuickOpen && inViewsPicker"
+  },
+  {
+    "command": "workbench.view.extension.claude-dev-ActivityBar",
+    "key": "ctrl+shift+q"
+  }
 ]
