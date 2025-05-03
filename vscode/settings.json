@@ -1,0 +1,141 @@
+{
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook",
+    "*.psd": "default"
+  },
+  "editor.inlayHints.fontFamily": "Ricty Diminished, 'Courier New', monospace",
+  "editor.fontFamily": "Ricty Diminished, 'Courier New', monospace",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "notebook.output.textLineLimit": 100,
+  "notebook.kernelProviderAssociations": [
+    {
+      "viewType": "jupyter-notebook",
+      "kernelProvider": "ms-toolsai.jupyter"
+    }
+  ],
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Args": ["--max-line-length", "119"],
+  "python.envFile": "${workspaceFolder}/.envrc",
+  "explorer.confirmDragAndDrop": false,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "sqltools.useNodeRuntime": false,
+  "cfnLint.path": "cfn-lint",
+  "cfnLint.format.enable": false,
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.formatOnSave": false
+  },
+  "workbench.colorTheme": "Default Dark+",
+  "files.associations": {
+    "*.rmd": "markdown"
+  },
+  "hediet.vscode-drawio.resizeImages": null,
+  "genieai.enableConversationHistory": true,
+  "terminal.integrated.defaultProfile.linux": "tmux",
+  "terminal.integrated.commandsToSkipShell": [
+    "-workbench.action.quickOpen",
+    "-workbench.action.terminal.focusFind"
+  ],
+  "yaml.customTags": [
+    "!Ref",
+    "!Sub scalar",
+    "!Sub sequence",
+    "!Join sequence",
+    "!FindInMap sequence",
+    "!GetAtt scalar",
+    "!GetAtt sequence",
+    "!Base64 mapping",
+    "!GetAZs",
+    "!Select scalar",
+    "!Select sequence",
+    "!Split sequence",
+    "!ImportValue",
+    "!Condition",
+    "!Equals sequence",
+    "!And",
+    "!If",
+    "!Not",
+    "!Or",
+    "!And sequence",
+    "!If sequence",
+    "!Not sequence",
+    "!Equals",
+    "!Or sequence",
+    "!FindInMap",
+    "!Base64",
+    "!Join",
+    "!Cidr",
+    "!Sub",
+    "!GetAtt",
+    "!ImportValue sequence",
+    "!Select",
+    "!Split"
+  ],
+  "aws.samcli.enableCodeLenses": true,
+  "genieai.promptPrefix.explain": "このコードについて説明してほしいです！",
+  "go.formatTool": "gofmt",
+  "[sql]": {
+    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+  },
+  "remote.SSH.remotePlatform": {
+    "isucon11-q-a": "linux",
+    "raspberrypi": "linux"
+  },
+  "remote.autoForwardPortsSource": "hybrid",
+  "errorLens.enabledDiagnosticLevels": [
+    "error",
+    "warning",
+    "info"
+  ],
+  "files.watcherExclude": {
+    "**/.bloop": true,
+    "**/.metals": true,
+    "**/.ammonite": true
+  },
+  "update.mode": "start",
+  "glassit.alpha": 210,
+  "sqltools.disableNodeDetectNotifications": true,
+  "editor.renderWhitespace": "all",
+  "jupyter.interactiveWindow.creationMode": "perFile",
+  "google-translate.firstLanguage": "ja",
+  "google-translate.maxSizeOfResult": 1000,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "vim.useSystemClipboard": true,
+  "vim.handleKeys": {
+    "<C-p>": false,
+    "<C-w>": false,
+    "<C-k>": false,
+    "<C-x>": false,
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-y>": false,
+    "<C-/>": false,
+    "<C-n>": false
+  },
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["x"],
+      "after": ["\"", "_", "x"]
+    },
+    {
+      "before": ["d","d"],
+      "after": ["\"", "_", "d","d"]
+    },
+    {
+      "before": ["d","w"],
+      "after": ["\"", "_", "d","w"]
+    }
+  ],
+  "terminal.external.windowsExec": "C:\\WINDOWS\\System32\\wsl.exe",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "cline.preferredLanguage": "Japanese - 日本語"
+}
