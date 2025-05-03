@@ -1,47 +1,200 @@
 {
-  "security.workspace.trust.untrustedFiles": "open",
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook",
-    "*.psd": "default"
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "editor.inlayHints.fontFamily": "Ricty Diminished, 'Courier New', monospace",
-  "editor.fontFamily": "Ricty Diminished, 'Courier New', monospace",
-  "notebook.cellToolbarLocation": {
-    "default": "right",
-    "jupyter-notebook": "left"
-  },
-  "notebook.output.textLineLimit": 100,
-  "notebook.kernelProviderAssociations": [
-    {
-      "viewType": "jupyter-notebook",
-      "kernelProvider": "ms-toolsai.jupyter"
-    }
-  ],
-  "python.linting.flake8Enabled": true,
-  "python.linting.flake8Args": ["--max-line-length", "119"],
-  "python.envFile": "${workspaceFolder}/.envrc",
-  "explorer.confirmDragAndDrop": false,
   "[python]": {
     "editor.formatOnType": true
   },
-  "sqltools.useNodeRuntime": false,
-  "cfnLint.path": "cfn-lint",
-  "cfnLint.format.enable": false,
-  "[yaml]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml",
-    "editor.formatOnSave": false
+  "[sql]": {
+    "editor.defaultFormatter": "mtxr.sqltools"
   },
-  "workbench.colorTheme": "Default Dark+",
+  "[tsv]": {
+    "editor.insertSpaces": false
+  },
+  "accessibility.signals.lineHasError": {
+    "sound": "off"
+  },
+  "accessibility.signals.notebookCellCompleted": {
+    "sound": "off"
+  },
+  "accessibility.signals.notebookCellFailed": {
+    "sound": "off"
+  },
+  "accessibility.signals.onDebugBreak": {
+    "sound": "off"
+  },
+  "atlascode.jira.enabled": false,
+  "atlascode.jira.jqlList": [
+    {
+      "enabled": true,
+      "id": "e5d01718-71c3-402e-8ab7-3fa738ad5b55",
+      "monitor": true,
+      "name": "My wano-project Issues",
+      "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
+      "siteId": "b50354f0-3605-45f3-935b-d0ce41d636ed"
+    }
+  ],
+  "aws.samcli.lambdaTimeout": 91234,
+  "cfnLint.path": "/home/tshimoma/.local/bin/cfn-lint",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  "aws.samcli.enableCodeLenses": true,
+  "cfnLint.format.enable": false,
+  "cfnLint.path": "cfn-lint",
+  "cline.preferredLanguage": "Japanese - 日本語",
+  "editor.fontFamily": "Ricty Diminished, 'Courier New', monospace",
+  "editor.inlineSuggest.fontFamily": "Ricty Diminished",
+  "editor.renderWhitespace": "all",
+  "errorLens.enabledDiagnosticLevels": [
+    "error",
+    "warning",
+    "info"
+  ],
+  "explorer.confirmDragAndDrop": false,
   "files.associations": {
     "*.rmd": "markdown"
   },
-  "hediet.vscode-drawio.resizeImages": null,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.watcherExclude": {
+    "**/.ammonite": true,
+    "**/.bloop": true,
+    "**/.metals": true
+  },
   "genieai.enableConversationHistory": true,
-  "terminal.integrated.defaultProfile.linux": "tmux",
+  "genieai.promptPrefix.addTests": "このコードをテストできるようにしてください",
+  "genieai.promptPrefix.explain": "このコード（または文章）を日本語で説明してください",
+  "genieai.promptPrefix.findProblems": "このコードについての問題を見つけてください",
+  "git.autofetch": true,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "githubIssues.queries": [
+    {
+      "label": "My Issues",
+      "query": "default"
+    },
+    {
+      "label": "Created Issues",
+      "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+    },
+    {
+      "label": "Recent Issues",
+      "query": "state:open repo:${owner}/${repository} sort:updated-desc"
+    }
+  ],
+  "glassit.alpha": 220,
+  "hediet.vscode-drawio.resizeImages": null,
+  "jupyter.interactiveWindow.creationMode": "perFile",
+  "python.analysis.extraPaths": [
+    "/mnt/c/Windows/system32/clip.exe"
+  ],
+  "python.linting.flake8Enabled": true,
+  "remote.SSH.remotePlatform": {
+    "isucon11-q-a": "linux",
+    "raspberrypi": "linux"
+  },
+  "remote.autoForwardPortsSource": "hybrid",
+  "security.workspace.trust.untrustedFiles": "open",
+  "sqltools.disableNodeDetectNotifications": true,
+  "sqltools.useNodeRuntime": false,
+  "terminal.external.windowsExec": "C:\\WINDOWS\\System32\\wsl.exe",
   "terminal.integrated.commandsToSkipShell": [
     "-workbench.action.quickOpen",
     "-workbench.action.terminal.focusFind"
   ],
+  "terminal.integrated.defaultProfile.linux": "tmux",
+  "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.fontFamily": "'Ricty Diminished'",
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "icon": "terminal-bash",
+      "path": "bash"
+    },
+    "fish": {
+      "path": "fish"
+    },
+    "pwsh": {
+      "icon": "terminal-powershell",
+      "path": "pwsh"
+    },
+    "tmux": {
+      "icon": "terminal-tmux",
+      "path": "tmux"
+    },
+    "zsh": {
+      "path": "zsh"
+    }
+  },
+  "terminal.integrated.profiles.windows": {
+    "Ubuntu (WSL)": {
+      "ENV_VARIABLE_NAME": "VALUE",
+      "args": [
+        "-d",
+        "Ubuntu"
+      ],
+      "path": "C:\\Windows\\System32\\wsl.exe"
+    }
+  },
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\wsl.exe",
+  "update.mode": "start",
+  "vim.handleKeys": {
+    "<C-/>": false,
+    "<C-a>": false,
+    "<C-b>": false,
+    "<C-f>": false,
+    "<C-k>": false,
+    "<C-n>": false,
+    "<C-p>": false,
+    "<C-w>": false,
+    "<C-x>": false,
+    "<C-y>": false
+  },
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "after": [
+        "\"",
+        "_",
+        "x"
+      ],
+      "before": [
+        "x"
+      ]
+    },
+    {
+      "after": [
+        "\"",
+        "_",
+        "d",
+        "d"
+      ],
+      "before": [
+        "d",
+        "d"
+      ]
+    },
+    {
+      "after": [
+        "\"",
+        "_",
+        "d",
+        "w"
+      ],
+      "before": [
+        "d",
+        "w"
+      ]
+    }
+  ],
+  "vim.useSystemClipboard": true,
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook",
+    "*.psd": "default"
+  },
   "yaml.customTags": [
     "!Ref",
     "!Sub scalar",
@@ -63,79 +216,28 @@
     "!Not",
     "!Or",
     "!And sequence",
+    "!If",
     "!If sequence",
+    "!Not",
     "!Not sequence",
     "!Equals",
+    "!Equals sequence",
+    "!Or",
     "!Or sequence",
     "!FindInMap",
+    "!FindInMap sequence",
     "!Base64",
     "!Join",
+    "!Join sequence",
     "!Cidr",
+    "!Ref",
     "!Sub",
+    "!Sub sequence",
     "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
     "!ImportValue sequence",
     "!Select",
     "!Split"
-  ],
-  "aws.samcli.enableCodeLenses": true,
-  "genieai.promptPrefix.explain": "このコードについて説明してほしいです！",
-  "go.formatTool": "gofmt",
-  "[sql]": {
-    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
-  },
-  "remote.SSH.remotePlatform": {
-    "isucon11-q-a": "linux",
-    "raspberrypi": "linux"
-  },
-  "remote.autoForwardPortsSource": "hybrid",
-  "errorLens.enabledDiagnosticLevels": [
-    "error",
-    "warning",
-    "info"
-  ],
-  "files.watcherExclude": {
-    "**/.bloop": true,
-    "**/.metals": true,
-    "**/.ammonite": true
-  },
-  "update.mode": "start",
-  "glassit.alpha": 210,
-  "sqltools.disableNodeDetectNotifications": true,
-  "editor.renderWhitespace": "all",
-  "jupyter.interactiveWindow.creationMode": "perFile",
-  "google-translate.firstLanguage": "ja",
-  "google-translate.maxSizeOfResult": 1000,
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "vim.useSystemClipboard": true,
-  "vim.handleKeys": {
-    "<C-p>": false,
-    "<C-w>": false,
-    "<C-k>": false,
-    "<C-x>": false,
-    "<C-a>": false,
-    "<C-f>": false,
-    "<C-y>": false,
-    "<C-/>": false,
-    "<C-n>": false
-  },
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": ["x"],
-      "after": ["\"", "_", "x"]
-    },
-    {
-      "before": ["d","d"],
-      "after": ["\"", "_", "d","d"]
-    },
-    {
-      "before": ["d","w"],
-      "after": ["\"", "_", "d","w"]
-    }
-  ],
-  "terminal.external.windowsExec": "C:\\WINDOWS\\System32\\wsl.exe",
-  "files.trimTrailingWhitespace": true,
-  "files.insertFinalNewline": true,
-  "cline.preferredLanguage": "Japanese - 日本語"
+  ]
 }
