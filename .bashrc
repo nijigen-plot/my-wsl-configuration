@@ -169,4 +169,9 @@ fi
 
 # direnv setting
 eval "$(direnv hook bash)"
-
+# VSCode
+export PATH=$PATH:'/mnt/c/Users/quark/AppData/Local/Programs/Microsoft VS Code/bin'
+# CLAUDE
+alias yolo="claude --dangerously-skip-permissions"
+# Terraform
+terraform -install-autocomplete
