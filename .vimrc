@@ -63,6 +63,10 @@ inoremap <silent><expr> <Tab>
 
 inoremap <expr> <CR> pumvisible() ? coc#_select_confirm() : "\<CR>"
 
+" blackhole register mapping
+nnoremap - "_
+xnoremap - "_
+
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
 
