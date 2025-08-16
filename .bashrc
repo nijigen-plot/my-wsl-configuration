@@ -175,3 +175,5 @@ export PATH=$PATH:'/mnt/c/Users/quark/AppData/Local/Programs/Microsoft VS Code/b
 alias yolo="claude --dangerously-skip-permissions"
 # Terraform
 terraform -install-autocomplete
+
+complete -C /home/quarkgabber/bin/terraform terraform
