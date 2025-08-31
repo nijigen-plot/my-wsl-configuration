@@ -181,3 +181,8 @@ export PATH=/usr/local/cuda/bin:$PATH
 export CUDA_HOME=/usr/local/cuda-12.8
 export PATH=/usr/local/cuda-12.8/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda-12.8/lib64:$LD_LIBRARY_PATH
+
+# Vim
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
